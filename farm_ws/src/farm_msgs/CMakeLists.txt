@@ -53,6 +53,10 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Lane.msg
+  Line.msg
+  Weed.msg
+  WeedList.msg
+  BatteryStatus.msg
 )
 
 ## Generate services in the 'srv' folder
