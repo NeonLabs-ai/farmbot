@@ -1,5 +1,14 @@
 # GNSS and RTK based autonomously navigating robot for precision spray of herbicide.
 
+## TODO
+
+- [ ] Program localisation method using GPS, IMU (and Vision if required)
+- [ ] define and solve lane tracking problem as input image and output Lane msg (to be modified)
+- [ ] Research about architecture of CNN to be used..
+- [ ] Train and deploy CNN in Jetson / Pi for weed detection purpose
+- [ ] Nozzle position planning algorithm
+- [ ] CAD Design of robot (Must be optimized for manufacturing)
+
 ## Summary of the proposed research 
 A farming robot with automatic navigation, weed detection system, designed for
 navigating between crops, across farms and providing aid in multiple operations
