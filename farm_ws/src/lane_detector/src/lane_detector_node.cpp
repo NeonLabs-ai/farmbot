@@ -9,7 +9,7 @@
 #include <opencv4/opencv2/imgproc/imgproc.hpp>
 #include <opencv4/opencv2/highgui/highgui.hpp>
 
-// Msg types
+// Msg type
 #include "farm_msgs/Lane.h"
 
 class LaneDetector
@@ -66,9 +66,19 @@ public:
         img.copyTo(dst, detected_edges);
         dst.copyTo(img);
 
-        // Find lanes
+        // Convert to HSV colorspace
 
-        // Publish
+        // Threshold values for crop color, soil color
+
+        // Create mask of threshold range on given img
+
+        // Assuming vanishing point and create lines from it
+
+        // Set ROI
+
+        // Apply Perspective transform
+
+        // Find lines and append it in lanes
 
         // pub.publish(lanes);
     }

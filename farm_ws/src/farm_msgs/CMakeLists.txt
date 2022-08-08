@@ -59,6 +59,9 @@ add_message_files(
   BatteryStatus.msg
   NozzleTrajectory.msg
   NozzlePositionList.msg
+  NozzlePosition.msg
+  GlobalState.msg
+  Trajectory.msg
 )
 
 ## Generate services in the 'srv' folder
