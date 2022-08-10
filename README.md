@@ -1,4 +1,4 @@
-# GNSS and RTK based autonomously navigating robot for precision spray of herbicide.
+# Autonomous navigating modular robotic system for precision spray of weedicides, Fungicides, Herbicides, and Insecticides.
 
 ## TODO
 
