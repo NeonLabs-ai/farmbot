@@ -10,6 +10,7 @@
 - [ ] CAD Design of robot (Must be optimized for manufacturing)
 
 ## Summary of the proposed research 
+
 A farming robot with automatic navigation, weed detection system, designed for
 navigating between crops, across farms and providing aid in multiple operations
 required by farmers, specific in automatic weed spraying system.
@@ -25,6 +26,7 @@ locations and plans trajectory of nozzle and spraying time stamp and controller 
 execute planned trajectory.
 
 ## Objectives
+
 1. Reduce amount of chemical (weedicide) usage in crops using automatic high
 precision weed detection (using CNN) and low-cost spraying system.
 2. Develop RTK based automatic navigation system for accurate positioning and
@@ -33,6 +35,7 @@ motion across different lanes of crop field.
 functionality of robot (future work).
 
 ## Major Scientific fields of Interest
+
 Such autonomous precise weedicide spraying robots are available in market but are
 too expensive because they run on heavy Deep Neural Networks, which are GPU-
 intensive and it’s not really needed because the risk factor is less so the trade-off of
@@ -43,6 +46,7 @@ still work, which would even work on a common small-scale robotic system viz,
 Raspberry Pi and NVIDIA Jetson Nano.
 
 ## Approach
+
 * Vision and GNNS + RTK based autonomous navigation of vehicle.
 * Development of ecosystem of modular systems using robot operating system
 (ROS) for farming application.
@@ -56,7 +60,8 @@ Vision based weed and crop detection, classification, localization and precisely
 ![](https://github.com/bhavikmk/farmbot/blob/main/assets/flowchart.png)
 
 
-## Name of equipment and accessories required for R&D
+<!-- ## Name of equipment and accessories required for R&D
+
 1. MXG Vector signal generator 100kHz-3GHz : N5182A
 2. Cognitive Wireless communication SDR Lab : software
 3. RF signal generator 9KHz to 3.0 GHz : N9310A
@@ -71,10 +76,10 @@ Single Channel : Keysight-3352B
 10. N5172B EXG X-Series RF vector signal
 generator: Keysight
 11. ARAMIS GPS L1, IRNSS L5, SDR Receiver : IP Solutions
-12. Accord NavIC Receiver : Accord
+12. Accord NavIC Receiver : Accord -->
 
 
-## Fund Requirement
+<!-- ## Fund Requirement
 Detailed break-up for the Project budget should be given as follows:
 Total
 Consumables
@@ -106,6 +111,6 @@ Vehicle Motion
 > DC Motor controller 250W : 3000
 Total : 45,000
 
-**Overall total : 117,000**
+**Overall total : 117,000** -->
 
 ## References
