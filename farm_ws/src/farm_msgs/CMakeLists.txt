@@ -62,6 +62,7 @@ add_message_files(
   NozzlePosition.msg
   GlobalState.msg
   Trajectory.msg
+  LandmarkMap.msg
 )
 
 ## Generate services in the 'srv' folder

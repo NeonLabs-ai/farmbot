@@ -38,11 +38,13 @@ class RobotPlanner
 
     void planner(){
 
-        // Create planned trajectory for navigation 
+        // calculate best trajectory for navigation using lane and state and goal position
+        
 
-        // 
+        // implement trajectory planner
 
-        // Publish trajectory
+        // publish trajectory
+
 
     }
 
