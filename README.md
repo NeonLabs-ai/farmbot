@@ -67,6 +67,10 @@ Vision based weed and crop detection, classification, localization and precisely
 
 ![](https://github.com/bhavikmk/farmbot/blob/main/assets/flowchart.png)
 
+### 3D Model of the Farmbot
+
+![](https://github.com/akgcode/farmbot/blob/main/assets/rendered_farmbot_1.JPG)
+![](https://github.com/akgcode/farmbot/blob/main/assets/snap_farmbot_1.jpg)
 
 <!-- ## Name of equipment and accessories required for R&D
 
