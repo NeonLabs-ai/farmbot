@@ -1,15 +1,23 @@
-# Autonomous navigating modular robotic system for precision spray of weedicides, Fungicides, Herbicides, and Insecticides.
+## Modular autonomous mobile robot for precision spray of Herbicides, and Insecticides.
+
+![GitHub Repo stars](https://img.shields.io/github/stars/Neonlabs-ai/farmbot?color=FFE333)
+![GitHub Repo forks](https://img.shields.io/github/forks/Neonlabs-ai/farmbot?color=FFE333)
+
+![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-informational?style=flat&logo=ubuntu&logoColor=white&color=2bbc8a)
+![ROS](https://img.shields.io/badge/Tools-ROS-informational?style=flat&logo=ROS&logoColor=white&color=2bbc8a)
+![C++](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=c%2B%2B&logoColor=white&color=2bbc8a)
 
 ## TODO
 
-- [ ] Program localisation method using GPS, IMU (and Vision if required)
-- [ ] define and solve lane tracking problem as input image and output Lane msg (to be modified)
-- [ ] Research about architecture of CNN to be used..
-- [ ] Train and deploy CNN in Jetson / Pi for weed detection purpose
-- [ ] Nozzle position planning algorithm
 - [ ] CAD Design of robot (Must be optimized for manufacturing)
+- [x] Program localisation method using GPS, IMU (and Vision if required)
+- [x] Research about architecture of CNN to be used..
+- [x] Train for weed detection purpose
+- [ ] define and solve lane tracking problem as input image and output Lane msg (to be modified)
+- [ ] deploy CNN in Jetson / Pi for weed detection purpose using TensorRT
+- [ ] Nozzle position planning algorithm
 
-## Summary of the proposed research 
+### Description
 
 A farming robot with automatic navigation, weed detection system, designed for
 navigating between crops, across farms and providing aid in multiple operations
@@ -25,7 +33,7 @@ deep neural network running parallel to lane tracker program detects weeds with
 locations and plans trajectory of nozzle and spraying time stamp and controller will
 execute planned trajectory.
 
-## Objectives
+### Objectives
 
 1. Reduce amount of chemical (weedicide) usage in crops using automatic high
 precision weed detection (using CNN) and low-cost spraying system.
@@ -34,7 +42,7 @@ motion across different lanes of crop field.
 3. Develop base platform with modular system for further improvisation in multi -
 functionality of robot (future work).
 
-## Major Scientific fields of Interest
+### Major Scientific fields of Interest
 
 Such autonomous precise weedicide spraying robots are available in market but are
 too expensive because they run on heavy Deep Neural Networks, which are GPU-
@@ -45,7 +53,7 @@ classes here are less (say, crops, weeds and lane), A narrow neural network woul
 still work, which would even work on a common small-scale robotic system viz,
 Raspberry Pi and NVIDIA Jetson Nano.
 
-## Approach
+### Approach
 
 * Vision and GNNS + RTK based autonomous navigation of vehicle.
 * Development of ecosystem of modular systems using robot operating system
@@ -55,7 +63,7 @@ Vision based weed and crop detection, classification, localization and precisely
 * Robot operating system will interface with micro-controllers to control vehicle trajectory, sprayer nozzle position and get sensor data.
 * Localization of vehicle using GNSS + RTK based system and implementing sensor fusion method to improve state estimation of vehicle.
 
-## FLOWCHART :
+### FLOWCHART :
 
 ![](https://github.com/bhavikmk/farmbot/blob/main/assets/flowchart.png)
 
@@ -113,4 +121,4 @@ Total : 45,000
 
 **Overall total : 117,000** -->
 
-## References
+### References
