@@ -24,8 +24,8 @@ navigating between crops, across farms and providing aid in multiple operations
 required by farmers, specific in automatic weed spraying system.
 Automatic weed detection and localization is achieved with deep neural network
 running on NVIDIA jetson nano, then planning sprayer path and spraying precisely
-on weeds. It is developed with ROS (Robot operating system) which makes system
-modular, efficient and scalable.
+on weeds. It is developed using ROS as its core, leveraging the open-source community to each components which makes system
+modular, efficient and scalable. 
 GNSS and RTK based approach is used for localization, and for increasing
 accuracy, sensor fusion method is used for more accurate state estimation.
 Localization is then used with vision system to guide through crop lanes and then
@@ -34,7 +34,6 @@ locations and plans trajectory of nozzle and spraying time stamp and controller 
 execute planned trajectory.
 
 ### Objectives
-
 1. Reduce amount of chemical (weedicide) usage in crops using automatic high
 precision weed detection (using CNN) and low-cost spraying system.
 2. Develop RTK based automatic navigation system for accurate positioning and
