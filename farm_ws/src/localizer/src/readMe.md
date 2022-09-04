@@ -15,3 +15,7 @@ Q what does derivative of an image would give?
 ## Trajectory
 - Travelling Salesman algorithm to enhance the trajectory planning algorithm to trace the efficient movement of flexible link for covering all pests on the pest map.dynamic programming approach.
 - To search the shortest path, apply the graph theory and express a pest map as a set of nodes and branches. Each node (pest) has X and Y coordinates on the pest map and they are connected expressed as branches. Minimize the total cost for link movement to reach all pest on a single plant.
+
+#Navigation Stack
+
+![](https://github.com/akgcode/farmbot/blob/main/assets/snap_farmbot_1.jpg)
