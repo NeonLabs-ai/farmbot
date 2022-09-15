@@ -1,4 +1,4 @@
-## Modular autonomous mobile robot for precision spray of Herbicides, and Insecticides.
+## Modular autonomous mobile robot for precision spray of Pesticides
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/Neonlabs-ai/farmbot?color=FFE333)
 ![GitHub Repo forks](https://img.shields.io/github/forks/Neonlabs-ai/farmbot?color=FFE333)
