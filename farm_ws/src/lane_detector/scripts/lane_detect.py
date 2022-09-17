@@ -39,18 +39,35 @@ lines = cv.HoughLinesP(edges, 1, np.pi/180, 100, minLineLength=600, maxLineGap=2
 # blank image of copy img
 blank = np.zeros_like(img)
 
+ls = []
+
 # draw lines
 for line in lines:
     x1, y1, x2, y2 = line[0]
+    ls_ = [x1, y1, x2 , y2]
+    ls.append(ls_)
+    # blank = cv.circle(blank, (x1,y1), radius=0, color=(255, 255, 255), thickness=-1)
+    # blank = cv.circle(blank, (x2,y2), radius=0, color=(255, 255, 255), thickness=-1)
+
     cv.line(blank, (x1, y1), (x2, y2), (255, 255, 255), 2)
 
+narr = np.array(ls)
+
+x1 = narr[:,0]
+y1 = narr[:,1]
+x2 = narr[:,2]
+y2 = narr[:,3]
+
+x = np.concatenate((x1, x2))
+y = np.concatenate((y1, y2))
 
 # crop image from x : 1200 to 3500 and y from 1000 to 3000
 crop = blank[1000:3000, 1200:3500]
 
 
 # show images
-plt.imshow(blank)
+# plt.imshow(blank)
+plt.scatter(x,y, color=[0,0,0], marker=1)
 plt.title('Original Image')
 
 plt.show()
