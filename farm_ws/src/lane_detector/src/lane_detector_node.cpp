@@ -118,7 +118,7 @@ public:
         for (size_t i = 0; i < lines.size(); i++)
         {
             cv::Vec4i l = lines[i];
-            cv::line(img, cv::Point(l[0], l[1] + img.rows / 2), cv::Point(l[2], l[3] + img.rows / 2), cv::Scalar(0, 0, 255), 3, CV_AA);
+            cv::line(img, cv::Point(l[0], l[1] + img.rows / 2), cv::Point(l[2], l[3] + img.rows / 2), cv::Scalar(0, 0, 255), 3);
         }
 
         // Show images
