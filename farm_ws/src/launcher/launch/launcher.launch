@@ -1,0 +1,13 @@
+<launch>
+<node name="weed_detector" pkg="weed_detector" type="weed_detector" output="screen" />
+
+<node name="lane_detector" pkg="lane_detector" type="lane_detector" output="screen" />
+
+<node name="localizer" pkg="localizer" type="localizer" output="screen" />
+
+<node name="free_space_detector_node" pkg="free_space_detector" type="free_space_detector_node" output="screen" />
+<node name="lane_detector_node" pkg="lane_detector" type="lane_detector_node" output="screen" />
+<node name="localizer_node" pkg="localizer" type="localizer_node" output="screen" />
+<node name="sign_detector_classifier_node" pkg="sign_detector_classifier" type="sign_detector_classifier_node" output="screen" />
+
+</launch>
