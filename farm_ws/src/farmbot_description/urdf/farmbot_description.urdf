@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="farmbot_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0397351421714649 -0.00523316717396427 -0.0506956721866616"
+        rpy="0 0 0" />
+      <mass
+        value="765.082786359246" />
+      <inertia
+        ixx="123.363633235284"
+        ixy="-4.05127262052682"
+        ixz="-1.81192358757159"
+        iyy="347.001423957529"
+        iyz="-19.0742943855652"
+        izz="396.269786227211" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_wheel_right">
+    <inertial>
+      <origin
+        xyz="-4.09994216354903E-09 0.0273313494100043 2.05165684441511E-08"
+        rpy="0 0 0" />
+      <mass
+        value="75.2974306084418" />
+      <inertia
+        ixx="3.97273337439722"
+        ixy="-8.12301090546896E-10"
+        ixz="-2.38621947966849E-07"
+        iyy="6.52717930000384"
+        iyz="2.4916888737866E-08"
+        izz="3.97273354189052" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/front_wheel_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/front_wheel_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_wheel_right_joint"
+    type="revolute">
+    <origin
+      xyz="1.13324967562402 -1.1 -0.50636922357741"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_wheel_right" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="front_wheel_left">
+    <inertial>
+      <origin
+        xyz="4.07161904192321E-09 -0.0373559005899962 2.05222080440493E-08"
+        rpy="0 0 0" />
+      <mass
+        value="75.297430608442" />
+      <inertia
+        ixx="3.97273323010825"
+        ixy="8.79404178645542E-09"
+        ixz="-1.0933292945157E-07"
+        iyy="6.52717930000387"
+        iyz="2.33275835192285E-08"
+        izz="3.97273368617951" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/front_wheel_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/front_wheel_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_wheel_left_joint"
+    type="revolute">
+    <origin
+      xyz="1.13324967562402 1.1 -0.50636922357741"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_wheel_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_wheel_right">
+    <inertial>
+      <origin
+        xyz="-3.86647994177203E-09 0.0373313494100045 2.0561844338296E-08"
+        rpy="0 0 0" />
+      <mass
+        value="75.2974306084417" />
+      <inertia
+        ixx="3.97273336899472"
+        ixy="-5.29037534574971E-10"
+        ixz="-2.36656657829227E-07"
+        iyy="6.52717930000384"
+        iyz="2.49245119024674E-08"
+        izz="3.97273354729302" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/rear_wheel_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/rear_wheel_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_wheel_right_joint"
+    type="revolute">
+    <origin
+      xyz="-1.1936883604935 -1.1 -0.50636922357741"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_wheel_right" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="rear_wheel_left">
+    <inertial>
+      <origin
+        xyz="-0.0016753876990174 -0.0373559005899956 -0.000576889073542142"
+        rpy="0 0 0" />
+      <mass
+        value="75.2974306084418" />
+      <inertia
+        ixx="3.97273323010823"
+        ixy="8.79404135440572E-09"
+        ixz="-1.09332927691436E-07"
+        iyy="6.52717930000384"
+        iyz="2.33275816313691E-08"
+        izz="3.9727336861795" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/rear_wheel_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://farmbot_description/meshes/rear_wheel_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rear_wheel_left_joint"
+    type="revolute">
+    <origin
+      xyz="-1.19201296872286 1.1 -0.50579231398166"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_wheel_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
